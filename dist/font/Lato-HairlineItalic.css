@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Lato Hairline";
+    src: url("Lato-HairlineItalic.eot"); /* IE9 */
+    src: url("Lato-HairlineItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Lato-HairlineItalic.woff") format("woff"), /* chrome, firefox */
+    url("Lato-HairlineItalic.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Lato-HairlineItalic.svg#Lato Hairline") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

@@ -8,7 +8,8 @@ var concat = require("gulp-concat");
 var imgmin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var uglify = require("gulp-uglify");
-
+var fontmin = require("gulp-fontmin");
+var jquery = require("gulp-jquery");
 
 gulp.task("css:main", function () {
    return gulp.src("src/style/main.less")
@@ -49,21 +50,31 @@ gulp.task("compress:js", function () {
     return gulp.src("src/scripts/*.js")
         .pipe(sourcemaps.init())
         .pipe(uglify())
+        .pipe(concat("bundle.min.js"))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest("dist/scripts"))
 });
 
 gulp.task("js:bootstrap" ,["compress:js"], function () {
     return  gulp.src([
+        "node_modules/jquery/dist/jquery.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
-        "dist/scripts/bootstrap.min.js"
+        "dist/scripts/bundle.min.js"
     ])
-        .pipe(concat("bootstrap.min.js"))
+        .pipe(concat("bundle.min.js"))
         .pipe(uglify())
         .pipe(gulp.dest("dist/scripts"));
 });
 
-gulp.task("primary", ["html", "css:bootstrap", "img:min", "js:bootstrap"]);
+
+gulp.task("font:compress", function () {
+    return gulp.src("src/font/*.ttf")
+        .pipe(fontmin())
+        .pipe(gulp.dest("dist/font"))
+});
+
+
+gulp.task("primary", ["html", "css:bootstrap" ,"font:compress", "img:min", "js:bootstrap"]);
 
 gulp.task("watch", ["primary"], function () {
     sync.init({
