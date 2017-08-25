@@ -10,17 +10,7 @@
 }
 
 
-@media screen and (max-width: 1000px){
-  .top-section {
-    visibility: hidden;
-  }
 
-  .sandwich {
-    display: inline-block !important;
-    position: fixed;
-    padding: 0!important;
-  }
-}
 
 
 @media screen and (max-width: 1292px) {
@@ -153,10 +143,38 @@
 
 }
 
+@media screen and (max-width: 800px){
+  .top-section {
+    visibility: hidden;
+  }
+
+  .ul-menu {
+    width: 100%;
+  }
+
+  .sandwich {
+    margin: 0;
+    position: fixed !important;
+  }
+
+  .touch-menu {
+    display: inline-block !important;
+    padding: 20px 0 20px 0;
+  }
+
+  .menu-item {
+    padding-left: 5%;
+  }
+
+}
 
 @media screen and (max-width: 768px){
   .text-info-lower {
     text-align: center;
+  }
+
+  .padding-top {
+  padding-top: 50px;
   }
 
   .center-thumbnail,
@@ -166,6 +184,15 @@
 
   .text-align-left {
     text-align: center;
+  }
+
+  .developer-box-center {
+    margin-top: 0 !important;
+    position: static !important;
+  }
+
+  .after-table-center {
+    margin: 20px 0 ;
   }
 }
 

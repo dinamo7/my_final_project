@@ -1,0 +1,34 @@
+
+.imageBox {
+  position: relative;
+  overflow: hidden;
+}
+.imageBox img {
+  width: 100% !important;
+  transition: .5s;
+}
+
+.textBox {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(214, 214, 214, 0.5);
+  transition: .5s;
+}
+.textBox h2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #181717 ;
+}
+.imageBox:hover  .textBox {
+  left: 0;
+}
+.imageBox:hover img {
+  transform: scale(1.2);
+}

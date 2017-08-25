@@ -6,7 +6,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "gulp": "^3.9.1",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -16,10 +17,12 @@
     "gulp-html-extend": "^1.1.6",
     "gulp-imagemin": "^3.3.0",
     "gulp-jquery": "^1.1.2",
+    "gulp-json": "^0.1.4",
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "jquery-validation": "^1.17.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
