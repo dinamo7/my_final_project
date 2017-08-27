@@ -56,12 +56,16 @@
     height: auto;
     padding: 0 !important;
     margin: 0;
+    z-index: 3;
+    position: relative;
   }
 
   .photo-second {
     height: auto;
     width: 100%;
     padding: 0;
+    z-index: 3;
+    position: relative;
   }
 
   .photo-third {
@@ -69,12 +73,16 @@
     height: auto;
     padding: 0;
     margin: 0;
+    z-index: 3;
+    position: relative;
   }
 
   .photo-third-lower {
     width: 100%;
     height: auto;
     padding: 0 ;
+    z-index: 3;
+    position: relative;
   }
 
   .settings-title-third {
@@ -102,18 +110,22 @@
   }
 
   .text-third-lower {
+    z-index: 2;
     padding: 0;
   }
 
   .text-second {
+z-index: 2;
     background-color: #f7f7f7;
   }
 
   .text-third {
+    z-index: 2;
     background-color: #f7f7f7;
   }
 
   .text-third-lower {
+    z-index: 2;
     background-color: #f7f7f7;
   }
 
@@ -135,15 +147,14 @@
 }
 
 
-@media screen and (max-width: 790px){
 
-  .photo-contact {
-    padding: 40px 2px;
-  }
-
-}
 
 @media screen and (max-width: 800px){
+
+  .display-none {
+  display: inline-block !important;
+}
+
   .top-section {
     visibility: hidden;
   }
@@ -167,8 +178,20 @@
   }
 
 }
+@media screen and (max-width: 790px){
 
+  .photo-contact {
+    padding: 40px 2px;
+  }
+
+}
 @media screen and (max-width: 768px){
+
+  .left-lower-thumbnail {
+    padding-top: 0;
+  }
+
+
   .text-info-lower {
     text-align: center;
   }
@@ -200,6 +223,12 @@
  .input-style {
    width: 40%;
  }
+}
+
+@media screen and (max-width: 504px) {
+  .form-btn button {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen  and (max-width: 400px){

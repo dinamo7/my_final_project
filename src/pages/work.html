@@ -5,13 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Some name"/>
+    <meta name="keywords" content="some keywords"/>
+    <link rel="shortcut icon" href="photo/logo.png" type="image/x-icon">
+    <title>Work</title>
     <link rel="stylesheet"  href="css/main.min.css">
 </head>
 <body>
 
 <!-- @@include partials/work_partials.html -->
 
+
 <script src="scripts/bundle.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script>
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+    });
+</script>
+
 </body>
 </html>

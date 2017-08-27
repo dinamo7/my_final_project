@@ -1,45 +1,44 @@
 <!-- @@block= work -->
+<nav id="menu" class="slideout-menu slideout-menu-left">
+    <ul class="ul-menu">
+
+        <li class="menu-item">
+
+            <a href="about_us.html" class="menu-link"> abuot us</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="work.html" class="menu-link">work</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="#" class="menu-link">shop</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="contact.htmt" class="menu-link">contact</a>
+
+        </li>
+
+    </ul>
+</nav>
+
+<main id="panel" class="display-none ">
+    <header>
+        <button class="toggle-button">☰</button>
+    </header>
+</main>
+
+
 <header>
 
     <div class="container-fluid">
-
-        <div class="row">
-
-            <a href="#" id="touch-menu" class="menu-link touch-menu">menu</a>
-
-            <nav class="col-xs-12 sandwich">
-
-                <ul id="menu" class="ul-menu margin-left">
-
-                    <li class="menu-item">
-
-                        <a href="about_us.html" class="menu-link"> abuot us</a>
-
-                    </li>
-
-                    <li class="menu-item">
-
-                        <a href="work.html" class="menu-link">work</a>
-
-                    </li>
-
-                    <li class="menu-item">
-
-                        <a href="#" class="menu-link">shop</a>
-
-                    </li>
-
-                    <li class="menu-item">
-
-                        <a href="#" class="menu-link">contact</a>
-
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </div>
 
         <div class="top-section row">
 
@@ -87,7 +86,8 @@
         </div>
 
     </div>
-        <img src="photo/top.gif" style="width: 100%">
+
+    <img src="photo/top.gif" style="width: 100%">
 
 </header>
 
@@ -97,7 +97,7 @@
 
         <div class="row">
 
-            <section class="top-text-login-section col-xs-12">
+            <section class="z-index top-text-login-section col-xs-12">
 
                 <div class="container-fluid">
 
@@ -161,17 +161,24 @@
 
             </section>
 
-            <section id="login" class="login-section col-xs-12">
+            <section id="login" class="z-index login-section col-xs-12">
 
                             <div class="wrapper">
                                 <div class="container">
                                     <h1>Welcome</h1>
                                     <form class="form" id="validationForm" name="validateForm">
-                                        <input type="text" name="name" placeholder="Name">
-                                        <input type="password" name="password" placeholder="Password">
-                                        <button type="submit" id="login-button">Login</button>
-                                        <button type="button" id="registration" class="show-registration-btn">Sign up</button>
+
+                                        <input type="text" name="name" class="form-control" placeholder="Name">
+
+                                        <input type="password" class="form-control" name="password" placeholder="Password">
+
+                                        <div class="form-btn">
+                                            <button type="submit" id="login-button">Login</button>
+                                            <button type="button" id="registration" class="show-registration-btn">Sign up</button>
+                                        </div>
+
                                     </form>
+
                                 </div>
 
                                 <ul class="bg-bubbles">
@@ -190,23 +197,35 @@
 
             </section>
 
-            <section id="registration-id" class="hide-form registration-section col-xs-12">
+            <section id="registration-id" class="z-index hide-form registration-section col-xs-12">
 
-                <div class="wrapper-second">
-                    <div class="container">
-                        <h1>Sign up</h1>
-                        <form class="form"  id="formRegistration" name="formRegistration" novalidate>
-                            <input type="text" name="name" required minlength="5" placeholder="Username">
-                            <input type="password" name="password" required minlength="8" placeholder="Password">
-                            <input type="password" name="password" required minlength="8" placeholder="Password repeated">
-                            <input type="email" name="email" required placeholder="Email">
-                            <input type="number" name="phone" required minlength="12" placeholder="Phone">
-                            <button type="submit" id="sign-up">Login</button>
-                            <button type="button" id="backToLogin">Back</button>
+                           <div class="wrapper-registration">
+
+                               <div class="container">
+
+                                   <h1>Sign up</h1>
+
+                                   <form class="form" id="formRegistration" name="formRegistration">
+
+                            <input type="text" name="name" class="form-control" placeholder="Name">
+
+                            <input type="email" name="email" class="form-control" placeholder="Email">
+
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+
+                            <div class="form-btn">
+                                <button type="submit">Sign up</button>
+                                <button type="button" id="backToLogin" class="">Back</button>
+                            </div>
+
                         </form>
-                    </div>
 
-                    <ul class="bg-bubbles">
+                               </div>
+
+
+                               <ul class="bg-bubbles">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -218,10 +237,12 @@
                         <li></li>
                         <li></li>
                     </ul>
-                </div>
+
+                           </div>
+
             </section>
 
-            <section class="after-registration col-xs-12">
+            <section class="after-registration z-index col-xs-12">
 
                 <div class="container-fluid">
 
@@ -284,7 +305,7 @@
 
             </section>
 
-            <section class="bg-color col-xs-12">
+            <section class="bg-color z-index col-xs-12">
 
                 <div class="container-fluid">
 
@@ -404,7 +425,7 @@
 
         <div class="row">
 
-            <section class="yebo col-xs-12">
+            <section class="yebo z-index col-xs-12">
 
                 <div class="container-fluid">
 

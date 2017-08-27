@@ -5,6 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Some name"/>
+    <meta name="keywords" content="some keywords"/>
+    <title>About US</title>
+    <link rel="shortcut icon" href="photo/logo.png" type="image/x-icon">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -12,47 +20,47 @@
 
 <!-- start about_usP.html-->
 <!-- @@block= aboutus -->
+
+<nav id="menu" class="slideout-menu slideout-menu-left">
+    <ul class="ul-menu">
+
+        <li class="menu-item">
+
+            <a href="about_us.html" class="menu-link"> abuot us</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="work.html" class="menu-link">work</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="#" class="menu-link">shop</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="contact.html" class="menu-link">contact</a>
+
+        </li>
+
+    </ul>
+</nav>
+
+<main id="panel" class="display-none ">
+    <header>
+        <button class="toggle-button">☰</button>
+    </header>
+</main>
+
+
 <header>
 
     <div class="container-fluid">
-
-        <div class="row">
-
-            <a href="#" id="touch-menu" class="menu-link touch-menu">menu</a>
-
-            <nav id="menu" class="col-xs-12 margin-left sandwich">
-
-                    <ul class="ul-menu">
-
-                        <li class="menu-item">
-
-                    <a href="about_us.html" class="menu-link"> abuot us</a>
-
-                </li>
-
-                        <li class="menu-item">
-
-                    <a href="work.html" class="menu-link">work</a>
-
-                </li>
-
-                        <li class="menu-item">
-
-                    <a href="#" class="menu-link">shop</a>
-
-                </li>
-
-                        <li class="menu-item">
-
-                    <a href="#" class="menu-link">contact</a>
-
-                </li>
-
-                    </ul>
-
-            </nav>
-
-        </div>
 
         <div class="top-section row">
 
@@ -364,23 +372,44 @@
     </section>
 
 
-            <section class="grup-photo col-xs-12">
+            <section class="padding-none grup-photo col-xs-12">
 
                 <div class="container-fluid">
 
                     <div class="row">
 
-                        <div class="col-xs-12 col-lg-6 padding-none">
-
-                            <img src="photo/grupLeft.png" class="photo-grup-left">
-
+                        <div class="col-xs-2 sidsFirst fond-hover padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/sidsFirst.png">
                         </div>
 
-                        <div class="col-xs-12 col-lg-6 padding-none">
-
-                            <img src="photo/grupRight.png" class="photo-grup-right">
-
+                        <div class="col-xs-2 sidsFirst fond-hover padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/grupSids.png">
                         </div>
+
+                        <div class="col-xs-2  bikeBack fond-hover padding-none">
+                            <span class="fond-text-2"><em>Some text</em></span><img src="../photo/bikeBack.png">
+                        </div>
+
+                        <div class="col-xs-2  bikeBack fond-hover padding-none">
+                            <span class="fond-text-2"><em>Some text</em></span><img src="../photo/bikeSide.jpg">
+                        </div>
+
+                        <div class="col-xs-4  room fond-hover padding-none">
+                            <span class="fond"><img class="hover"  src="../photo/hover.gif"></span><img src="../photo/room.png">
+                        </div>
+
+                        <div class="col-xs-4  theBigestSids fond-hover padding-none">
+                            <span class="fond"><img class="hover" src="../photo/hover.gif"></span><img src="../photo/theBigestSids.png">
+                        </div>
+
+                        <div class="col-xs-2  sidsPro fond-hover padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/sidsPro.png">
+                        </div>
+
+                        <div class="col-xs-2 fond-hover sidsPro padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/bag.png">
+                        </div>
+
 
                     </div>
 
@@ -456,11 +485,11 @@
 
                     <div class="row">
 
-                        <div class="col-xs-12 text-align">
+                        <div class="col-xs-12 text-align input-section">
 
                             <input type="email" class="input-style" placeholder="enter your email..." >
 
-                            <button class="btn-input font-normal">GO</button>
+                            <button class="btn-input border font-normal">GO</button>
 
                         </div>
 
@@ -490,11 +519,15 @@
                         <div class="text-align-left col-xs-12 col-sm-3 col-lg-3 col-sm-push-2">
 
                             <div>
+
                                 <img src="photo/twiterLower.gif" class="photo-contact">
+
 
                                 <img src="photo/facebook.gif" class="photo-contact">
 
+
                                 <img src="photo/pinter.gif" class="photo-contact">
+
                             </div>
 
                         </div>
@@ -521,7 +554,20 @@
 </footer>
 <!-- @@close -->
 <!-- end about_usP.html-->
-
 <script src="scripts/bundle.min.js"></script>
+<script>
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+    });
+</script>
+
 </body>
 </html>

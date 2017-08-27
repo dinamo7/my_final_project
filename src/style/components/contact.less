@@ -1,7 +1,32 @@
-.table {
-  background: #ffffff;
-  color: #929292;
+* {
+  transition: .1s;
+}
+
+.table-setting {
   position: relative;
+  background: #f7f7f7;
+  color: #6d6d6d;
+  padding: 50px;
+}
+
+.dataTables_filter .dataTables_length {
+  padding-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+  border-radius: 3px;
+  border: 1px solid #696464;
+}
+
+table.dataTable tbody tr {
+  color: #242424;
+  background: #e4e8ff !important;
+}
+
+.even tr .odd:hover {
+  color: #969696 !important;
+  background: #fdfdff !important;
 }
 
 .after-table {
@@ -58,7 +83,6 @@
   margin-left: 10%;
   margin-bottom: 50px;
   margin-top: 50%;
-  position: absolute;
   z-index: 1;
 }
 

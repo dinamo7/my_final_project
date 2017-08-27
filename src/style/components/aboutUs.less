@@ -1,3 +1,7 @@
+* {
+  transition: .1s;
+}
+
 
 @font-face {
   font-family: Lato;
@@ -17,6 +21,7 @@
   font-size: 17px;
   background-color: #f7f7f7;
   padding: 100px 0 140px 0;
+  z-index: 2;
 }
 
 .title {
@@ -36,10 +41,11 @@
 }
 
 .section-second,
- .section-third {
-  background-color: #fff;
+.section-third {
   position: relative;
   padding: 0 !important;
+  background: #fff;
+  z-index: 2;
 }
 
 .text-second {
@@ -72,7 +78,7 @@
 }
 
 .settings-title-second {
-text-align: center;
+  text-align: center;
   padding-top: 80px;
 }
 
@@ -91,7 +97,6 @@ text-align: center;
 
 .photo-second {
   height: 100%;
-  padding: 0;
 }
 
 .box {
@@ -114,6 +119,11 @@ text-align: center;
 
 // third
 
+.section-third {
+  background: #fff;
+  z-index: 2;
+}
+
 
 .text-third-lower {
   display: table-cell;
@@ -128,7 +138,7 @@ text-align: center;
 
 .photo-third {
   height: 100%;
-  padding: 0 !important;
+  padding: 0;
   margin: 0;
 }
 
@@ -138,7 +148,6 @@ text-align: center;
 
 .photo-third-lower {
   height: 100%;
-  padding: 0 !important;
 }
 
 .settings-title-third {
@@ -160,15 +169,18 @@ text-align: center;
 
 .last-section {
   background-color: #f7f7f7;
+  z-index: 2;
 }
 
 .photo-last-section-left {
- padding: 0 !important;
+  z-index: 2;
+  padding: 0 !important;
   width: 100%;
 }
 
 .photo-last-section-right{
- padding: 0 !important;
+  z-index: 2;
+  padding: 0 !important;
   width: 100%;
 }
 
@@ -215,6 +227,7 @@ text-align: center;
   background-color: #f7f7f7;
   padding-bottom: 30px;
   color: #848789;
+  z-index: 2;
 }
 
 .twiter {
@@ -234,6 +247,7 @@ text-align: center;
 .grup-photo {
   padding: 0 !important;
   background-color: #282f35;
+  z-index: 2;
 }
 
 .photo-grup-right,
@@ -250,12 +264,13 @@ footer {
 .discover {
   background-color: #282f35;
   text-align: center;
+  z-index: 2;
 }
 
-.btn-bg {
-
+.photo-lower-section{
+  z-index: 2;
+  background: #ffffff;
 }
-
 
 .my-btn {
   background-color: #282f35;
@@ -280,7 +295,7 @@ footer {
 }
 
 .padding-logo-right-lower {
-   padding-right: 50px;
+  padding-right: 50px;
 }
 
 .text-align {
@@ -299,10 +314,18 @@ footer {
   width: 400px;
   height: 60px;
   border: 1px solid #d3d7d9;
+
 }
 
 .input-section {
   padding-top: 40px;
+  z-index: 2;
+  background: #ffffff;
+}
+
+.border {
+  border: 1px solid #9f9f9f;
+  border-radius: 2px;
 }
 
 .btn-input {
@@ -310,7 +333,6 @@ footer {
   color: #ffffff;
   height: 60px;
   width: 120px;
-  border: 1px solid #ffff;
 }
 
 .btn-input:focus {
@@ -334,6 +356,7 @@ footer {
   padding-bottom: 100px;
   background-color: #f7f7f7;
   color: #848789;
+  z-index: 2;
   text-align: center;
 }
 
@@ -348,4 +371,101 @@ footer {
 
 .text-align-left {
   text-align: left;
+}
+
+.z-index {
+  z-index: 3;
+}
+
+
+.sidsFirst {
+  width:100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bikeBack {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.room {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidsPro {
+  overflow: hidden;
+  position: relative;
+}
+
+.theBigestSids {
+  position: absolute !important;
+  margin-top: 267px;
+  overflow: hidden;
+}
+
+.hover {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.fond-text-2 {
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all .5s;
+  transform: scale(0);
+  color: #fff;
+  padding-top: 100%;
+  background-color: rgba(91, 91, 91, 0.5);
+}
+
+.fond-text {
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all .5s;
+  transform: scale(0);
+  color: #fff;
+  padding-top: 50%;
+  background-color: rgba(0,0,0,.5);
+}
+
+
+.fond {
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.fond-hover:hover .fond {
+  opacity: .7;
+}
+
+.fond-hover:hover .fond-text {
+  opacity: .7;
+  transform: scale(1);
+}
+
+.fond-hover:hover .fond-text-2 {
+  opacity: .7;
+  transform: scale(1);
 }

@@ -22,7 +22,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "jquery-validation": "^1.17.0"
+    "jquery-validation": "^1.17.0",
+    "slideout": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

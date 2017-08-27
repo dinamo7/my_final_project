@@ -57,8 +57,10 @@ gulp.task("compress:js", function () {
 
 gulp.task("js:bootstrap" ,["compress:js"], function () {
     return  gulp.src([
-        "node_modules/jquery-validation/dist/jquery.validation.min.js",
         "node_modules/jquery/dist/jquery.js",
+        "node_modules/slideout/dist/slideout.min.js",
+        "node_modules/jquery-validation/dist/jquery.validate.min.js",
+        "node_modules/jquery-validation/dist/additional-methods.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "dist/scripts/bundle.min.js"
     ])

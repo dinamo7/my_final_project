@@ -5,62 +5,58 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Some name"/>
+    <meta name="keywords" content="some keywords"/>
+    <title>About US</title>
+    <link rel="shortcut icon" href="photo/logo.png" type="image/x-icon">
+    <title>Contact</title>
     <link rel="stylesheet" href="css/main.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
-    <script type="text/javascript" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#data').DataTable();
-        })
-    </script>
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
 </head>
 <body>
 
 <!-- start contact_P.html-->
 <!-- @@block= contact -->
+<nav id="menu" class="slideout-menu slideout-menu-left">
+    <ul class="ul-menu">
+
+        <li class="menu-item">
+
+            <a href="about_us.html" class="menu-link"> abuot us</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="work.html" class="menu-link">work</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="#" class="menu-link">shop</a>
+
+        </li>
+
+        <li class="menu-item">
+
+            <a href="contact.html" class="menu-link">contact</a>
+
+        </li>
+
+    </ul>
+</nav>
+
+<main id="panel" class="display-none ">
+    <header>
+        <button class="toggle-button">☰</button>
+    </header>
+</main>
+
+
 <header>
 
     <div class="container-fluid">
-
-        <div class="row">
-
-            <a href="#" id="touch-menu" class="menu-link touch-menu">menu</a>
-
-            <nav class="col-xs-12 sandwich">
-
-                <ul id="menu" class="ul-menu margin-left">
-
-                    <li class="menu-item">
-
-                        <a href="about_us.html" class="menu-link"> abuot us</a>
-
-                    </li>
-
-                    <li class="menu-item">
-
-                        <a href="work.html" class="menu-link">work</a>
-
-                    </li>
-
-                    <li class="menu-item">
-
-                        <a href="#" class="menu-link">shop</a>
-
-                    </li>
-
-                    <li class="menu-item">
-
-                        <a href="#" class="menu-link">contact</a>
-
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </div>
 
         <div class="top-section row">
 
@@ -108,6 +104,7 @@
         </div>
 
     </div>
+
     <img src="photo/top.gif" style="width: 100%">
 
 </header>
@@ -120,11 +117,11 @@
 
             <section class="section-table">
 
-                <div class="container-fluid">
+                <div class="z-index container-fluid table-setting">
 
                     <div class="row">
 
-                        <table  class="col-xs-12 table" border="2">
+                        <table id="table" class="col-xs-8 text-align padding-none hover" border="2">
 
                             <thead id="data">
 
@@ -139,9 +136,13 @@
                                 <th>City</th>
 
                                 <th>Info</th>
+
                             </tr>
 
                             </thead>
+                            <tbody class="table">
+
+                            </tbody>
 
                         </table>
 
@@ -151,7 +152,7 @@
 
             </section>
 
-            <section class="developer-section">
+            <section class="z-index developer-section">
 
                 <div class="container-fluid">
 
@@ -218,7 +219,7 @@
 
             </section>
 
-            <section class="after-table">
+            <section class="z-index after-table">
 
                 <div class="container-fluid">
 
@@ -275,7 +276,7 @@
 
         <div class="row">
 
-            <section class="yebo col-xs-12">
+            <section class="z-index yebo col-xs-12">
 
                 <div class="container-fluid">
 
@@ -327,5 +328,26 @@
 <!-- end contact_P.html-->
 
 <script src="scripts/bundle.min.js"></script>
+<script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#table').DataTable();
+    })
+</script>
+<script>
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+    });
+</script>
+
+
 </body>
 </html>
