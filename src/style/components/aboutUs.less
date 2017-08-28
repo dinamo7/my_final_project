@@ -412,6 +412,32 @@ footer {
   height: 100%;
 }
 
+.basic-fond-effect {
+  position: relative;
+}
+
+.padding-top-hover {
+  padding-top: 25%;
+}
+
+.basic-fond-hover {
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #373737;
+  color: white;
+  text-align: center;
+  transform: rotateY(90deg);
+  opacity: 0;
+  transition: .5s;
+}
+
+.basic-fond-effect:hover .basic-fond-hover{
+  opacity: .5;
+  transform: rotateY(0deg);
+}
 
 
 .fond-text-2 {
