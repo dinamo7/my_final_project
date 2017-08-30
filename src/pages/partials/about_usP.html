@@ -1,7 +1,7 @@
 <!-- @@block= aboutus -->
 
-<nav id="menu" class="slideout-menu slideout-menu-left">
-    <ul class="ul-menu">
+<nav id="menu">
+   <ul class="ul-menu">
 
         <li class="menu-item">
 
@@ -30,12 +30,8 @@
     </ul>
 </nav>
 
-<main id="panel" class="display-none ">
-    <header>
-        <button class="toggle-button">☰</button>
-    </header>
-</main>
-
+<div id="panel">
+    <button class="toggle-button settings-button-toggle">☰</button>
 
 <header>
 
@@ -469,36 +465,36 @@
 
                     <div class="row">
 
-                        <div class="col-xs-4  col-md-2 sidsFirst fond-hover padding-none">
-                            <span class="fond-text"><em>Some text</em></span><img src="../photo/sidsFirst.png" class="padding-photo-group">
+                        <div class="col-xs-12  col-sm-2 sidsFirst fond-hover padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/sidsFirst.png" class="sidsFirst-adap">
                         </div>
 
-                        <div class="col-xs-4  col-md-2 sidsFirst fond-hover padding-none">
-                            <span class="fond-text"><em>Some text</em></span><img src="../photo/grupSids.png" class="padding-photo-group">
+                        <div class="col-xs-12  col-sm-2 sidsFirst fond-hover padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/grupSids.png" class="grupSids-adap">
                         </div>
 
-                        <div class="col-xs-4  col-md-2 bikeBack fond-hover padding-none">
-                            <span class="fond-text-2"><em>Some text</em></span><img src="../photo/bikeBack.png">
+                        <div class="col-xs-6  col-sm-2 bikeBack fond-hover padding-none">
+                            <span class="fond-text-2"><em>Some text</em></span><img src="../photo/bikeBack.png" class="bikeBack-adap">
                         </div>
 
-                        <div class="col-xs-4 col-md-2 bikeBack fond-hover padding-none">
-                            <span class="fond-text-2"><em>Some text</em></span><img src="../photo/bikeSide.jpg" class="padding-photo-group">
+                        <div class="col-xs-6 col-sm-2 bikeBack fond-hover padding-none">
+                            <span class="fond-text-2"><em>Some text</em></span><img src="../photo/bikeSide.jpg" class="bikeSide-adap">
                         </div>
 
-                        <div class="col-xs-8 col-md-4 room fond-hover padding-none">
-                            <span class="fond"><img class="hover"  src="../photo/hover.gif"></span><img src="../photo/room.png" class="padding-photo-group">
+                        <div class="col-xs-12 col-sm-4 room fond-hover padding-none">
+                            <span class="fond"><a href="#" class="link-photo-hover"><img class="hover"  src="../photo/hover.gif"></a></span><img src="../photo/room.png" class="room-adap">
                         </div>
 
-                        <div class="col-xs-8  col-md-4 theBigestSids fond-hover padding-none">
-                            <span class="fond"><img class="hover" src="../photo/hover.gif"></span><img src="../photo/theBigestSids.png" class="padding-photo-group">
+                        <div class="col-xs-12  col-sm-4 theBigestSids fond-hover padding-none">
+                            <span class="fond"><a href="#" class="link-photo-hover"><img class="hover" src="../photo/hover.gif"></a></span><img src="../photo/theBigestSids.png" class="theBigestSids-adap">
                         </div>
 
-                        <div class="col-xs-4  col-md-2 sidsPro fond-hover padding-none">
-                            <span class="fond-text"><em>Some text</em></span><img src="../photo/sidsPro.png" class="padding-photo-group">
+                        <div class="col-xs-12  col-sm-2 sidsPro fond-hover padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/sidsPro.png" class="sidsPro-adap">
                         </div>
 
-                        <div class="col-xs-4 col-md-2 fond-hover sidsPro padding-none">
-                            <span class="fond-text"><em>Some text</em></span><img src="../photo/bag.png" class="padding-photo-group">
+                        <div class="col-xs-12 col-sm-2 fond-hover sidsPro padding-none">
+                            <span class="fond-text"><em>Some text</em></span><img src="../photo/bag.png" class="bag-adap">
                         </div>
 
 
@@ -516,6 +512,7 @@
 </main>
 
 <footer>
+
     <div class="container-fluid">
 
         <div class="row">
@@ -575,11 +572,15 @@
 
                     <div class="row">
 
-                        <div class="col-xs-12 text-align input-section">
+                        <div class="col-xs-12 text-align ">
 
-                            <input type="email" class="input-style" placeholder="enter your email..." >
+                            <form class="input-section" id="email-submit">
 
-                            <button class="btn-input border font-normal">GO</button>
+                                <input type="email"  name="email" class="input-style" placeholder="enter your email..." >
+
+                                <button type="submit" class="btn-input border font-normal">GO</button>
+
+                            </form>
 
                         </div>
 
@@ -610,13 +611,17 @@
 
                             <div>
 
-                                <img src="photo/twiterLower.gif" class="photo-contact">
+                                <a href="#" class="link-mini-photo">
+                                    <img src="photo/twiterLower.gif" class="photo-contact">
+                                </a>
 
+                                <a href="#" class="link-mini-photo">
+                                    <img src="photo/facebook.gif" class="photo-contact">
+                                </a>
 
-                                <img src="photo/facebook.gif" class="photo-contact">
-
-
-                                <img src="photo/pinter.gif" class="photo-contact">
+                                <a href="#" class="link-mini-photo">
+                                    <img src="photo/pinter.gif" class="photo-contact">
+                                </a>
 
                             </div>
 
@@ -626,7 +631,7 @@
 
                             <div class="div-yebo font-normal">
 
-                                Handcrafted by <img src="photo/yebo.gif">
+                                Handcrafted by <a href="#" class="link-mini-photo"><img src="photo/yebo.gif"></a>
 
                             </div>
 
@@ -642,4 +647,8 @@
 
     </div>
 </footer>
+
+
+</div>
+
 <!-- @@close -->

@@ -15,7 +15,7 @@
 
 <!-- start work_partials.html-->
 <!-- @@block= work -->
-<nav id="menu" class="slideout-menu slideout-menu-left">
+<nav id="menu">
     <ul class="ul-menu">
 
         <li class="menu-item">
@@ -45,11 +45,8 @@
     </ul>
 </nav>
 
-<main id="panel" class="display-none ">
-    <header>
-        <button class="toggle-button">☰</button>
-    </header>
-</main>
+<div id="panel">
+    <button class="toggle-button settings-button-toggle">☰</button>
 
 
 <header>
@@ -330,11 +327,12 @@
                                 <div class="side-thumbnail col-sm-6 col-md-4">
                                     <div class="thumbnail">
 
-                                        <div class="imageBox">
+                                        <div class="imageBox fond-gallery-hover">
+
+                                            <a href="#" class="link-photo-gallery">
                                             <img src="photo/car.gif" class="gallery-photo">
-                                            <div class="textBox">
-                                                <h2>Some Text</h2>
-                                            </div>
+                                            </a>
+
                                         </div>
 
                                         <div class="caption">
@@ -349,8 +347,15 @@
                                 </div>
 
                                 <div class="center-thumbnail col-sm-6 col-md-4">
+
                                 <div class="thumbnail">
+
+                                <div class=" fond-gallery-hover">
+                                    <a href="#" class="link-photo-gallery">
                                     <img src="photo/field.gif" class="gallery-photo">
+                                    </a>
+                                </div>
+
                                     <div class="caption">
                                         <h3>Thumbnail label</h3>
                                         <p>
@@ -364,7 +369,15 @@
 
                                 <div class="side-thumbnail col-sm-6 col-md-4">
                                     <div class="thumbnail">
-                                        <img src="photo/tree.gif" class="gallery-photo">
+
+                                        <div class="fond-gallery-hover">
+
+                                            <a href="#" class="link-photo-gallery">
+                                                <img src="photo/tree.gif" class="gallery-photo">
+                                            </a>
+
+                                        </div>
+
                                         <div class="caption">
                                             <h3>Thumbnail label</h3>
                                             <p>
@@ -383,7 +396,13 @@
 
                         <div class="left-lower-thumbnail col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="photo/tea.gif" class="gallery-photo">
+
+                                <div class=" fond-gallery-hover">
+                                    <a href="#" class="link-photo-gallery">
+                                        <img src="photo/tea.gif" class="gallery-photo">
+                                    </a>
+                                </div>
+
                                 <div class="caption">
                                     <h3>Thumbnail label</h3>
                                     <p>
@@ -397,7 +416,12 @@
 
                         <div class="center-lower-thumbnail col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="photo/fieldLower.gif" class="gallery-photo">
+
+                                <div class=" fond-gallery-hover">
+                                    <a href="#" class="link-photo-gallery">
+                                        <img src="photo/fieldLower.gif" class="gallery-photo">
+                                    </a>
+                                </div>
                                 <div class="caption">
                                     <h3>Thumbnail label</h3>
                                     <p>
@@ -411,7 +435,11 @@
 
                         <div class="right-lover-thumbnail col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="photo/raspberry.gif" class="gallery-photo">
+                                <div class=" fond-gallery-hover">
+                                    <a href="#" class="link-photo-gallery">
+                                        <img src="photo/raspberry.gif" class="gallery-photo">
+                                    </a>
+                                </div>
                                 <div class="caption">
                                     <h3>Thumbnail label</h3>
                                     <p>
@@ -460,11 +488,19 @@
                         <div class="text-align-left col-xs-12 col-sm-3 col-lg-3 col-sm-push-2">
 
                             <div>
-                                <img src="photo/twiterLower.gif" class="photo-contact">
 
-                                <img src="photo/facebook.gif" class="photo-contact">
+                                <a href="#" class="link-mini-photo">
+                                    <img src="photo/twiterLower.gif" class="photo-contact">
+                                </a>
 
-                                <img src="photo/pinter.gif" class="photo-contact">
+                                <a href="#" class="link-mini-photo">
+                                    <img src="photo/facebook.gif" class="photo-contact">
+                                </a>
+
+                                <a href="#" class="link-mini-photo">
+                                    <img src="photo/pinter.gif" class="photo-contact">
+                                </a>
+
                             </div>
 
                         </div>
@@ -473,7 +509,7 @@
 
                             <div class="div-yebo font-normal">
 
-                                Handcrafted by <img src="photo/yebo.gif">
+                                Handcrafted by <a href="#" class="link-mini-photo"><img src="photo/yebo.gif"></a>
 
                             </div>
 
@@ -489,6 +525,8 @@
 
     </div>
 </footer>
+
+</div>
 <!-- @@close -->
 <!-- end work_partials.html-->
 

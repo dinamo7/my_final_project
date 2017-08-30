@@ -60,34 +60,8 @@
   text-decoration: none;
 }
 
-.touch-menu {
-  padding-left: 30px;
-  position: fixed;
-  display: none;
-}
 
-.margin-left {
-  margin-left: -100%;
-  transition: .5s;
-}
 
-.margin-left-none {
-  margin-left: 0 !important;
-  transition: .5s;
-}
-
-.after-table {
-  color: #3f3f3f;
-}
-
-.ul-menu {
-  width: 35%;
-  padding-left: 20px;
-}
-
-.h1, .h2, .h3, h1, h2, h3 {
-  margin: 0;
-}
 
 body {
   width: 100%;
@@ -99,13 +73,11 @@ body {
   top: 0;
   bottom: 0;
   width: 256px;
-  border: 1px solid #777171;
-  border-radius: 3px;
-  height: 250px;
+  min-height: 100vh;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
-  background-color: rgba(201, 201, 201, 0.1);
 }
 
 .slideout-menu-left {
@@ -117,57 +89,40 @@ body {
 }
 
 .slideout-panel {
-  position: fixed;
+  position: relative;
   z-index: 1;
   will-change: transform;
-  height: 100px;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
 }
 
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
-  overflow: -webkit-paged-y;
+  overflow: hidden;
 }
 
 .slideout-open .slideout-menu {
   display: block;
+  background: #e8eaef;
 }
 
-.toggle_menu {
-  position: fixed;
-  padding: 15px 20px 15px 15px;
-  margin-top: 70px;
-  color: white;
-  cursor: pointer;
-  background-color: #777171;
-  z-index: 1000;
-  font-size: 2em;
-}
-
-
-.sidebar-menu {
-  position: fixed;
-  width: 250px;
-  margin-left: 0;
-  overflow: hidden;
-  height: 500px;
-  background-color: rgba(183, 183, 183, 0.1);
-  opacity: 0.7;
-  transition: all .5s ease-in-out;
-  -webkit-overflow-scrolling: touch;
-}
-.toggle-button {
-  padding: 10px 15px 10px 10px;
-  margin-top: 20px;
-  cursor: pointer;
-  background-color: #716b7c;
-  margin-left: 10px;
-  font-size: 2em;
-  border: 1px solid #777171;
-  border-radius: 3px;
-  color: white;
-}
-
-.display-none {
+.settings-button-toggle {
+  position: absolute;
+  margin: 20px;
+  z-index: 5;
+  padding: 5px;
+  color: #fff;
+  background: #cecede;
+  border: 1px solid #909090;
+  height: 50px;
+  border-radius: 2px;
+  width: 45px;
+  font-size: 25px;
   display: none;
+}
+
+.ul-menu {
+  display: grid;
+  padding-left: 20%;
 }

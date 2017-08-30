@@ -65,3 +65,27 @@ $(document).ready(function () {
        }
    });
 });
+
+
+
+$(document).ready(function () {
+    $("#email-submit").validate({
+        rules: {
+            email:{
+                required: true,
+                email: true,
+                minlength: 5
+            }
+
+        },
+        massages: {
+            email: {
+                required: "Please, enter the email.",
+                minlength: jQuery.format("Length must be longer than {0}-x characters!")
+            }
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+});

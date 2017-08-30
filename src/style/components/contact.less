@@ -17,11 +17,18 @@
   margin-left: 0.5em;
   border-radius: 3px;
   border: 1px solid #696464;
+  background: #c3e9da;;
+}
+
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
 }
 
 table.dataTable tbody tr {
   color: #242424;
-  background: #e4e8ff !important;
+  background: #c3e9da !important;
 }
 
 .even tr .odd:hover {
@@ -115,4 +122,40 @@ table.dataTable tbody tr {
 .btn-developer:active:focus {
   background-color: #578fad;
   color: #b6b6b6;
+}
+
+.dataTables_length label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: 700;
+  margin: 0 20px 20px 20px;
+}
+
+label select {
+  background: #c3e9da;
+  border: 1px solid #696464;
+  border-radius: 3px;
+}
+
+span .paginate_button {
+  padding: 5px 10px;
+  background: #c3e9da;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+  padding: 10px 18px;
+  border-radius: 15px;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+table.dataTable.no-footer {
+  border: 0;
+}
+
+table.dataTable.no-footer {
+   border-bottom: 0 !important;
 }
